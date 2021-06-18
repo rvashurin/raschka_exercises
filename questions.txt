@@ -1,2 +1,5 @@
 1) How to project new points in kPCA?
+2) Why does conventional PCA return basis, while kPCA returns projected points?
+3) How does nested CV work really? Why does it average accuracy over different models in outer loop?
+4) How to holistially interpret precision, recall, f1 and other metrics to assess model performance?
 
