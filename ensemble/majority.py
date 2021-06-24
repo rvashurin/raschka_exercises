@@ -134,11 +134,10 @@ class MajorityVoteClassifier(BaseEstimator, ClassifierMixin):
         if self.vote == 'probability':
             maj_vote = np.argmax(self.predict_proba(X), axis=1)
         else: # 'classlabel' vote
-
             # Collect results from clf.predict calls
             predictions = np.asarray([clf.predict(X)
-                                     for clf in
-                                     self.classifiers_]).T
+                                      for clf in
+                                      self.classifiers_]).T
             maj_vote = np.apply_along_axis(lambda x: np.argmax(
                                            np.bincount(x,
                                            weights=self.weights)),
@@ -168,7 +167,6 @@ class MajorityVoteClassifier(BaseEstimator, ClassifierMixin):
         probas = np.asarray([clf.predict_proba(X)
                              for clf in self.classifiers_])
         avg_proba = np.average(probas, axis=0, weights=self.weights)
-
         return avg_proba
 
     def get_params(self, deep=True):
@@ -265,6 +263,7 @@ for clf, label, clr, ls \
     roc_auc = auc(x=fpr, y=tpr)
     plt.plot(fpr, tpr, color=clr,
              linestyle=ls, label='%s (auc=%0.2f)' % (label, roc_auc))
+
 plt.legend(loc='lower right')
 plt.plot([0, 1], [0, 1],
          linestyle='--',
