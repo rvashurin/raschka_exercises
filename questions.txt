@@ -2,4 +2,22 @@
 2) Why does conventional PCA return basis, while kPCA returns projected points?
 3) How does nested CV work really? Why does it average accuracy over different models in outer loop?
 4) How to holistially interpret precision, recall, f1 and other metrics to assess model performance?
-
+5) Order statistic
+6) Rank statistic
+7) Rankits
+8) Gradient Boosting and xgboost/catboost
+9) Backpropagation
+10) Jacobian
+11) Jacobian Chain Rule
+12) Hyperparamether tuning outside k-fold CV
+13) Time and space complexities of ML methods
+14) Dynamic programming
+15) Skewness, Kurtosis
+16) Hinge loss - how is it used if it's not differentiable at the hinge point?
+17) P-P, Q-Q and normal probability plot
+18) word2vec
+19) seq2seq
+20) gradient of RNNs
+21) modern NLP architectures
+22) Regularization in NeuralNetworks
+23) More complicated optimization for NNs, apart from GradientDescent
