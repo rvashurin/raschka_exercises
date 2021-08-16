@@ -21,3 +21,4 @@
 21) modern NLP architectures
 22) Regularization in NeuralNetworks
 23) More complicated optimization for NNs, apart from GradientDescent
+24) Number of parameters in RNNs
